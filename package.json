@@ -2,7 +2,7 @@
   "name": "clg-nodejs-5",
   "version": "1.0.0",
   "description": "CLG Node JS Lesson 5",
-  "main": "movieIndex.js",
+  "main": "movieArray.js",
   "scripts": {
     "test": "jest --coverage"
   },
