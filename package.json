@@ -1,7 +1,7 @@
 {
   "name": "clg-nodejs-5",
   "version": "1.0.0",
-  "description": "CLG Node.js Lesson 5",
+  "description": "CLG Node JS Lesson 5",
   "main": "movieIndex.js",
   "scripts": {
     "test": "jest --coverage"
@@ -10,10 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/Shannspan/clg-nodejs-5.git"
   },
+  "keywords": [],
   "author": "Shannon Roberts",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Shannspan/clg-nodejs-5/issues"
   },
-  "homepage": "https://github.com/Shannspan/clg-nodejs-5#readme"
+  "homepage": "https://github.com/Shannspan/clg-nodejs-5#readme",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jest": "^29.3.1"
+  }
 }
