@@ -35,7 +35,6 @@ const forwardFilmList = [{"Lightyear": "Sci fi Action"}, {"Brave": "Historical d
 //$ node movieArray.js 
 // Four animated films
 // 4
-// 4
 // New movie coming
 
 
@@ -55,7 +54,7 @@ function createMovies() {
 });
 }
 
-createMovies();
+
 
 async function callMovies2() {       
     console.log('Four animated films');
