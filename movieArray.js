@@ -29,11 +29,11 @@ callMovies();
 // then after 1 second
 // array in reverse
 
-async function createMovies() {
-    const newMovie = forwardFilmList.push({Mulan: 'Historical Action'});
-    
-} 
+//FIX REQUIRED: 1000MS TIMER IS WORKING BUT PRODUCES createMovies
 
+async function createMovies() {
+    return forwardFilmList.push({Mulan: 'Historical Action'});    
+} 
 
 function movieTimer2() {
     return new Promise (resolve => {
@@ -43,11 +43,12 @@ function movieTimer2() {
 })
 }
 
-async function callMovies2() {    
-    
-    console.log(newMovie);
-    const twoSecNew = await movieTimer2();
-    console.log(twoSecNew);
+async function callMovies2() {       
+    console.log('New movie coming');
+    const twoSecNew = await Promise.all(movieTimer2((async() => {
+    return await createMovies();   
+})));
+console.log(twoSecNew);
 }
 createMovies();
 
