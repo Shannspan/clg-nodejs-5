@@ -38,8 +38,14 @@ const forwardFilmList = [{"Lightyear": "Sci fi Action"}, {"Brave": "Historical d
 // New movie coming
 
 
-let newFilmList = forwardFilmList.push({Mulan: 'Historical Action'});    
+let newFilmList = forwardFilmList.push({Mulan:'Historical Action'});    
 
+// IDEAS FOR FIX START:
+// REDO ARRAY FORMAT TO BE TITLE: 'TITLE', GENRE: 'GENRE' 
+// RESEARCH .PUSH & WHY NOT WORKING
+// IS EVENT OR EVENTEMMITTER MORE APPROPRIATE?
+// SEPARATE FUNCTIONS TO INDIVIDUAL PAGES
+// 
 
 
 
