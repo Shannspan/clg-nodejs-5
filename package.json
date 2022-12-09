@@ -4,6 +4,7 @@
   "description": "CLG Node JS Lesson 5",
   "main": "movieArray.js",
   "scripts": {
+    "start": "nodemon movieArray.js",
     "test": "jest --coverage"
   },
   "repository": {
