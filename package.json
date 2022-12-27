@@ -2,9 +2,9 @@
   "name": "clg-nodejs-5",
   "version": "1.0.0",
   "description": "CLG Node JS Lesson 5",
-  "main": "movieArray.js",
+  "main": "mFunction.js",
   "scripts": {
-    "start": "nodemon movieArray.js",
+    "start": "nodemon mFunction.js",
     "test": "jest --coverage"
   },
   "repository": {
