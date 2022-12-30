@@ -48,33 +48,10 @@ let createMovies = (movieTitle, movieStoryline) => {
 // createMovies() is done
 // using async await to achieve this
 
-let init = async(newTitle, newStoryline) => {
+let initMovies = async(newTitle, newStoryline) => {
     await createMovies(newTitle, newStoryline);
     getMovies();
 };
 
-init("Minions The Rise of Gru", "The untold story of one 12-year-old’s dream to become the world’s greatest supervillain. In the heart of the 1970s, amidst a flurry of feathered hair and flared jeans, Gru is growing up in the suburbs. A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them.");
-
-//HOW TO ADD IN ERROR HANDLING?? 
-
-// NEW FILE OR INCLUDE TRY /CATCH IN INIT() ??
-
-
-// async function initMovies() {
-//     let result = null;
-//     //error handling/unit testing try catch block
-//     try {
-//         result = await Promise.all(
-//             createMovies(); // complete first
-//             getMovies(); // complete after createMovies
-//         )
-//         console.log('Success: ', result);
-//     } catch (err) {
-//         console.log('Fail : ', result, err);
-//     }
-// }
-
-// initMovies();
-
-
+initMovies("Minions The Rise of Gru", "The untold story of one 12-year-old’s dream to become the world’s greatest supervillain. In the heart of the 1970s, amidst a flurry of feathered hair and flared jeans, Gru is growing up in the suburbs. A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them.");
 
