@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1672461588208" clover="3.2.0">
-  <project timestamp="1672461588208" name="All files">
-    <metrics statements="19" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6" elements="27" coveredelements="23" complexity="0" loc="19" ncloc="19" packages="1" files="2" classes="2"/>
+<coverage generated="1672464408819" clover="3.2.0">
+  <project timestamp="1672464408819" name="All files">
+    <metrics statements="20" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6" elements="28" coveredelements="23" complexity="0" loc="20" ncloc="20" packages="1" files="2" classes="2"/>
     <file name="mArray.js" path="C:\Users\smbra\OneDrive\Documents\GitHub\Nodejs\clg-nodejs-5\mArray.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <line num="3" count="1" type="stmt"/>
     </file>
     <file name="mFunction.js" path="C:\Users\smbra\OneDrive\Documents\GitHub\Nodejs\clg-nodejs-5\mFunction.js">
-      <metrics statements="18" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6"/>
+      <metrics statements="19" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6"/>
       <line num="3" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
@@ -15,17 +15,18 @@
       <line num="13" count="6" type="stmt"/>
       <line num="15" count="0" type="stmt"/>
       <line num="16" count="0" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="33" count="1" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
       <line num="34" count="1" type="stmt"/>
-      <line num="38" count="1" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
       <line num="40" count="1" type="stmt"/>
-      <line num="51" count="1" type="stmt"/>
-      <line num="52" count="1" type="stmt"/>
-      <line num="53" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
       <line num="56" count="1" type="stmt"/>
-      <line num="58" count="1" type="stmt"/>
+      <line num="61" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
