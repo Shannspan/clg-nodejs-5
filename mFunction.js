@@ -11,7 +11,7 @@ let promise = Promise.resolve();
 const getMovies = () => {
     movies.forEach(function (movie, index) {
         promise = promise.then(function () {
-            //console.log(movie.Title);
+            console.log(movie.Title);
             return new Promise(function (resolve) {
                 const timerGM = setTimeout(resolve, 1000);
                 //console.log(movie.Storyline);
