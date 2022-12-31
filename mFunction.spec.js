@@ -5,19 +5,19 @@
 
 const { mFunction } = require('./mFunction');
 
-console.log(mFunction);
+//console.log(mFunction);
 
-function testMovies() {
-  expect(mFunction).toContain(index, String);
-  expect(new Set(mFunction)).toContain(index, String);
-} 
-  try {let result = testMovies('Correct array format');
-  console.log(result);
-} catch (err) {
-  console.log(err.message);
-};
+describe('arrayContaining', () => {
+  const expected = ['Lightyear', 'Brave', 'Mitchells vs the Machines', 'The Croods: A New Age', 'Moana'];
+  it('matches even though received contains additional elements', () => {
+    expect(['Lightyear', 'Brave', 'Mitchells vs the Machines', 'The Croods: A New Age', 'Moana', 'Minions The Rise of Gru']).toEqual(expect.arrayContaining(expected));
+  });
+  it('does not match as received does not contain expected elements', () => {
+    expect(['Bob', 'Eve']).not.toEqual(expect.arrayContaining(expected));
+  });
+});
 
-function expect(mFunction: any) {
-  throw new Error("Function not implemented.");
-}
-//'The movie list has "Minions The Rise of Gru" on it'
+// attempted using "test": "jest --detectOpenHandles" to isolate issue:
+// only 75% cover for functions in mFunction.js 
+// "asynchronous operations that weren't stopped in your tests"
+// did not help - no further details in error message, revert to --coverage
