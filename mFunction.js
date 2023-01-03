@@ -6,16 +6,18 @@ let promise = Promise.resolve();
 
 // create getMovies function to iterate through array
 // enclose loop in 1 second timeout (1000 milliseconds)
-// usinf forEach to achieve
+// using forEach to achieve
 
-const getMovies = () => {
+ const getMovies = () => {
     movies.forEach(function (movie, index) {
         promise = promise.then(function () {
             console.log(movie.Title);
             return new Promise(function (resolve) {
                 const timerGM = setTimeout(resolve, 1000);
                 //console.log(movie.Storyline);
-                clearTimeout(timerGM);
+                //clearTimeout(timerGM);
+                //removed as interfering with function operation
+                // FIND FIX - INSERT A BREAK FOR THE ASYNCH CODE ANOTHER WAY
             });
             
 
@@ -40,7 +42,9 @@ let createMovies = (movieTitle, movieStoryline) => {
         return new Promise(function (resolve) {
             const timerCM = setTimeout(resolve, 2000);
             console.log(`Your new movie has been added`); 
-            clearTimeout(timerCM);          
+            //clearTimeout(timerCM);    
+            //removed as interfering with function operation
+                // FIND FIX - INSERT A BREAK FOR THE ASYNCH CODE ANOTHER WAY      
         });
         
     });
@@ -59,3 +63,4 @@ let initMovies = async(newTitle, newStoryline) => {
 
 
 initMovies("Minions The Rise of Gru", "The untold story of one 12-year-old’s dream to become the world’s greatest supervillain. In the heart of the 1970s, amidst a flurry of feathered hair and flared jeans, Gru is growing up in the suburbs. A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them.");
+

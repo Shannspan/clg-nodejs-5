@@ -6,9 +6,11 @@
 
 const { mFunction } = require('./mFunction');
 
+//const { mArray} = require('.mArray')
+
 console.log(mFunction);
 
-
+//console.log(mArray);
 
  //
 
@@ -19,6 +21,7 @@ describe('arrayContaining', () => {
   it('matches even though received contains additional elements', () => {
     try {
     expect(['Lightyear', 'Brave', 'Mitchells vs the Machines', 'The Croods: A New Age', 'Moana', 'Minions The Rise of Gru']).toEqual(expect.arrayContaining(expectTitles));
+
   } catch (err) {
   ('does not match as received does not contain expected elements', () => {
     expect([Number]).not.toEqual(expect.arrayContaining(expected));
