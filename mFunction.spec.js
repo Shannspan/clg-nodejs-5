@@ -19,12 +19,11 @@ describe('arrayContaining', () => {
   it('matches even though received contains additional elements', () => {
     try {
     expect(['Lightyear', 'Brave', 'Mitchells vs the Machines', 'The Croods: A New Age', 'Moana', 'Minions The Rise of Gru']).toEqual(expect.arrayContaining(expectTitles));
-  
   } catch (err) {
   ('does not match as received does not contain expected elements', () => {
     expect([Number]).not.toEqual(expect.arrayContaining(expected));
     console.log("error", err);
-  }); 
+}); 
 }});
 });
 
@@ -47,3 +46,12 @@ test('should reject to error', () => {
 // new test are working BUT
 // *** STILL HAVE ONLY 75% COVER (LINES 14-18 MISSED)
 // DOES THIS MEAN THE TIMEOUTS ARE WHAT NEEDS COVER NOT THE PROMISE??
+
+// promises contain the time outs so perhaps not
+
+// test ('Promise test', () => {
+//   beforeEach(async () => {
+//     await Promise.all(setTimeout);
+//   })
+// })
+
